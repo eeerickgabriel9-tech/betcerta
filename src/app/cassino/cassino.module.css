@@ -1,0 +1,175 @@
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 320px;
+  min-height: calc(100vh - 68px);
+}
+
+.main {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner {
+  background: linear-gradient(135deg, #180d38 0%, #0d1730 60%, #080c16 100%);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+.balanceTag {
+  margin-top: 0.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  width: fit-content;
+  color: var(--text-secondary);
+}
+
+.balanceTag strong {
+  color: var(--green-win);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+}
+
+.gameTabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.tabBtn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  text-align: left;
+}
+
+.tabBtn:hover {
+  border-color: var(--purple-light);
+  background: rgba(124, 58, 237, 0.1);
+  transform: translateY(-2px);
+}
+
+.tabActive {
+  background: linear-gradient(145deg, #1f123d, #111a33) !important;
+  border-color: var(--purple-primary) !important;
+  box-shadow: 0 4px 20px var(--purple-glow);
+}
+
+.tabIcon {
+  font-size: 2rem;
+}
+
+.tabText {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabText strong {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.tabText span {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.hotTag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--red-loss);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.newTag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--gold);
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.gameStage {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .gameTabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .gameTabs {
+    grid-template-columns: 1fr;
+  }
+}

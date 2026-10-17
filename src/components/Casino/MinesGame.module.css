@@ -1,0 +1,216 @@
+.container {
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  max-width: 780px;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.gameLayout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #080d1a;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.minesButtons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.mineBtn {
+  flex: 1;
+  background: #141c2e;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.4rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mineActive {
+  background: var(--purple-primary);
+  color: #fff;
+  border-color: var(--purple-primary);
+}
+
+.stakeChips {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.stakeChip {
+  background: #141c2e;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.stakeActive {
+  background: var(--purple-primary);
+  color: #fff;
+}
+
+.statusBox {
+  background: #111827;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.winBanner {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid var(--green-win);
+  color: var(--green-win);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.lossBanner {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid var(--red-loss);
+  color: var(--red-loss);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.cashOutBtn {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  background: #080d1a;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.tile, .emptyTile {
+  aspect-ratio: 1;
+  background: #141c2e;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-muted);
+}
+
+.tile:hover:not(:disabled) {
+  background: #1c2742;
+  border-color: var(--purple-light);
+  transform: scale(1.04);
+}
+
+.tileRevealed {
+  cursor: default;
+}
+
+.tileDiamond {
+  background: rgba(16, 185, 129, 0.25) !important;
+  border-color: var(--green-win) !important;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+  animation: popIn 0.25s ease;
+}
+
+.tileBomb {
+  background: rgba(239, 68, 68, 0.3) !important;
+  border-color: var(--red-loss) !important;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+  animation: shake 0.3s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+@media (max-width: 650px) {
+  .gameLayout {
+    grid-template-columns: 1fr;
+  }
+}

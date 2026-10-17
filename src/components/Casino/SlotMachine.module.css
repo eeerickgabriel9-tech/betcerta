@@ -1,0 +1,178 @@
+.container {
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.machineBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.reelsFrame {
+  display: flex;
+  gap: 1rem;
+  background: #060911;
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 3px solid var(--purple-primary);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9), 0 0 25px var(--purple-glow);
+}
+
+.reel {
+  width: 100px;
+  height: 110px;
+  background: linear-gradient(180deg, #161f36, #0e1526);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.1s ease;
+}
+
+.spinning {
+  animation: reelShake 0.1s infinite;
+}
+
+@keyframes reelShake {
+  0% { transform: translateY(-4px); }
+  50% { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+.symbol {
+  font-size: 3.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+.message {
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  width: 100%;
+}
+
+.win {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid var(--green-win);
+  color: var(--green-win);
+  animation: bounce 0.4s ease;
+}
+
+.loss {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--red-loss);
+  color: var(--text-secondary);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.betSelector {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.betButtons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.betBtn {
+  background: #151c2e;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.betBtn:hover {
+  background: var(--purple-primary);
+  color: #fff;
+}
+
+.betActive {
+  background: var(--purple-primary) !important;
+  color: #fff !important;
+  border-color: var(--purple-primary) !important;
+  box-shadow: 0 0 10px var(--purple-glow);
+}
+
+.spinBtn {
+  width: 100%;
+  max-width: 320px;
+  font-size: 1.15rem;
+  padding: 0.9rem;
+}
+
+.payouts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1rem;
+}
+
+.payoutItem {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.35rem;
+  border-radius: 6px;
+}
+
+.payoutItem strong {
+  color: var(--gold);
+}

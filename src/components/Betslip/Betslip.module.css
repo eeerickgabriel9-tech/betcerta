@@ -1,0 +1,496 @@
+.betslipOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  z-index: 9998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.overlayOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.betslipContainer {
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border);
+  width: 360px;
+  max-width: 95vw;
+  height: 100vh;
+  position: fixed;
+  right: -400px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.85);
+  transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.open {
+  right: 0 !important;
+}
+
+.header {
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.tabActive {
+  background: var(--purple-primary);
+  color: #fff;
+}
+
+.countBadge {
+  background: #fff;
+  color: var(--purple-primary);
+  border-radius: 10px;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  font-weight: 800;
+}
+
+.countBadgeGold {
+  background: var(--gold);
+  color: #000;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  font-weight: 800;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.emptyTitle {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.emptySub {
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.slipActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slipType {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--purple-light);
+}
+
+.clearBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clearBtn:hover {
+  color: var(--red-loss);
+}
+
+.selectionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.itemCard {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.itemCard:hover {
+  border-color: var(--purple-primary);
+}
+
+.builderItemCard {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.08), rgba(19, 28, 46, 0.95)) !important;
+  border: 1px solid rgba(255, 102, 0, 0.45) !important;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.builderItemCard:hover {
+  border-color: #ff6600 !important;
+  box-shadow: 0 0 14px rgba(255, 102, 0, 0.25);
+}
+
+.builderBadge {
+  background: linear-gradient(90deg, #ff6600, #ff8533);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 900;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.builderLegsList {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed rgba(255, 102, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.builderLegItem {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.builderLegDot {
+  color: #ff6600;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.removeBtn:hover {
+  color: var(--red-loss);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  padding-right: 1.5rem;
+}
+
+.itemSport {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.itemOdd {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--gold);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.itemSelection {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.itemMarket {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.itemMatch {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.stakeBox {
+  margin-top: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stakeInputRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stakeLabel {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.75rem;
+}
+
+.currencyPrefix {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.stakeInput {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  outline: none;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.chipsRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.chipBtn {
+  background: #1a2236;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.chipBtn:hover {
+  background: var(--purple-primary);
+  color: #fff;
+  border-color: var(--purple-primary);
+}
+
+.chipMax {
+  color: var(--gold);
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.summaryBox {
+  background: var(--bg-primary);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.highlightOdd {
+  color: var(--purple-light);
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.highlightReturn {
+  color: var(--green-win);
+  font-size: 1.15rem;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.successMsg {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--green-win);
+  color: var(--green-win);
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.errorMsg {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--red-loss);
+  color: var(--red-loss);
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.openBetsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.openBetCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem;
+}
+
+.openBetHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.betId {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple-light);
+}
+
+.openBetMatch {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.openBetDetails {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.detailLabel {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .betslipContainer {
+    width: 100%;
+    max-width: 100vw;
+    height: 85vh;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .open {
+    transform: translateY(0) !important;
+    right: 0 !important;
+  }
+}
+
+

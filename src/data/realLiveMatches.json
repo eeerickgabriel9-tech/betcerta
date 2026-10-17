@@ -1,0 +1,674 @@
+[
+  {
+    "id": "live-la-liga-19ee7316",
+    "league": "La Liga",
+    "leagueKey": "la-liga",
+    "leagueIcon": "🇪🇸",
+    "sport": "futebol",
+    "isLive": true,
+    "liveTime": "42'",
+    "homeTeam": "Deportivo La Coruña",
+    "awayTeam": "Levante",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "AO VIVO AGORA",
+    "featured": true,
+    "stats": {
+      "possession": {
+        "home": 51,
+        "away": 49
+      },
+      "shotsOnTarget": {
+        "home": 3,
+        "away": 2
+      },
+      "totalShots": {
+        "home": 8,
+        "away": 6
+      },
+      "corners": {
+        "home": 4,
+        "away": 3
+      },
+      "yellowCards": {
+        "home": 1,
+        "away": 2
+      },
+      "redCards": {
+        "home": 0,
+        "away": 0
+      },
+      "dangerousAttacks": {
+        "home": 35,
+        "away": 29
+      }
+    },
+    "analysis": {
+      "headline": "Deportivo La Coruña vs Levante — La Liga (AO VIVO)",
+      "probHome": 45,
+      "probDraw": 25,
+      "probAway": 30,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-la-liga-19ee7316-home",
+          "label": "Deportivo La Coruña",
+          "odd": 2.33
+        },
+        "draw": {
+          "id": "live-la-liga-19ee7316-draw",
+          "label": "Empate",
+          "odd": 2.56
+        },
+        "away": {
+          "id": "live-la-liga-19ee7316-away",
+          "label": "Levante",
+          "odd": 4.3
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-la-liga-19ee7316-over",
+          "label": "Mais de 2.5 Gols",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-la-liga-19ee7316-under",
+          "label": "Menos de 2.5 Gols",
+          "odd": 1.92
+        },
+        "label": "Total de Gols"
+      },
+      "btts": {
+        "yes": {
+          "id": "live-la-liga-19ee7316-btts-yes",
+          "label": "Sim",
+          "odd": 1.75
+        },
+        "no": {
+          "id": "live-la-liga-19ee7316-btts-no",
+          "label": "Não",
+          "odd": 2.05
+        }
+      }
+    }
+  },
+  {
+    "id": "live-bundesliga-947bd5d9",
+    "league": "Bundesliga",
+    "leagueKey": "bundesliga",
+    "leagueIcon": "🇩🇪",
+    "sport": "futebol",
+    "isLive": true,
+    "liveTime": "65'",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1. FC Köln",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "stats": {
+      "possession": {
+        "home": 51,
+        "away": 49
+      },
+      "shotsOnTarget": {
+        "home": 3,
+        "away": 2
+      },
+      "totalShots": {
+        "home": 8,
+        "away": 6
+      },
+      "corners": {
+        "home": 4,
+        "away": 3
+      },
+      "yellowCards": {
+        "home": 1,
+        "away": 2
+      },
+      "redCards": {
+        "home": 0,
+        "away": 0
+      },
+      "dangerousAttacks": {
+        "home": 35,
+        "away": 29
+      }
+    },
+    "analysis": {
+      "headline": "Eintracht Frankfurt vs 1. FC Köln — Bundesliga (AO VIVO)",
+      "probHome": 45,
+      "probDraw": 25,
+      "probAway": 30,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-bundesliga-947bd5d9-home",
+          "label": "Eintracht Frankfurt",
+          "odd": 2.22
+        },
+        "draw": {
+          "id": "live-bundesliga-947bd5d9-draw",
+          "label": "Empate",
+          "odd": 2.73
+        },
+        "away": {
+          "id": "live-bundesliga-947bd5d9-away",
+          "label": "1. FC Köln",
+          "odd": 4.27
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-bundesliga-947bd5d9-over",
+          "label": "Mais de 2.5 Gols",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-bundesliga-947bd5d9-under",
+          "label": "Menos de 2.5 Gols",
+          "odd": 1.92
+        },
+        "label": "Total de Gols"
+      },
+      "btts": {
+        "yes": {
+          "id": "live-bundesliga-947bd5d9-btts-yes",
+          "label": "Sim",
+          "odd": 1.75
+        },
+        "no": {
+          "id": "live-bundesliga-947bd5d9-btts-no",
+          "label": "Não",
+          "odd": 2.05
+        }
+      }
+    }
+  },
+  {
+    "id": "live-serie-a-7d316004",
+    "league": "Serie A Italiana",
+    "leagueKey": "serie-a",
+    "leagueIcon": "🇮🇹",
+    "sport": "futebol",
+    "isLive": true,
+    "liveTime": "55'",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Sassuolo",
+    "homeScore": 3,
+    "awayScore": 2,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "stats": {
+      "possession": {
+        "home": 51,
+        "away": 49
+      },
+      "shotsOnTarget": {
+        "home": 5,
+        "away": 3
+      },
+      "totalShots": {
+        "home": 8,
+        "away": 6
+      },
+      "corners": {
+        "home": 4,
+        "away": 3
+      },
+      "yellowCards": {
+        "home": 1,
+        "away": 2
+      },
+      "redCards": {
+        "home": 0,
+        "away": 0
+      },
+      "dangerousAttacks": {
+        "home": 35,
+        "away": 29
+      }
+    },
+    "analysis": {
+      "headline": "Frosinone vs Sassuolo — Serie A Italiana (AO VIVO)",
+      "probHome": 45,
+      "probDraw": 25,
+      "probAway": 30,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-serie-a-7d316004-home",
+          "label": "Frosinone",
+          "odd": 1.55
+        },
+        "draw": {
+          "id": "live-serie-a-7d316004-draw",
+          "label": "Empate",
+          "odd": 3.97
+        },
+        "away": {
+          "id": "live-serie-a-7d316004-away",
+          "label": "Sassuolo",
+          "odd": 6.17
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-serie-a-7d316004-over",
+          "label": "Mais de 2.5 Gols",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-serie-a-7d316004-under",
+          "label": "Menos de 2.5 Gols",
+          "odd": 1.92
+        },
+        "label": "Total de Gols"
+      },
+      "btts": {
+        "yes": {
+          "id": "live-serie-a-7d316004-btts-yes",
+          "label": "Sim",
+          "odd": 1.75
+        },
+        "no": {
+          "id": "live-serie-a-7d316004-btts-no",
+          "label": "Não",
+          "odd": 2.05
+        }
+      }
+    }
+  },
+  {
+    "id": "live-ligue-1-66c168c0",
+    "league": "Ligue 1",
+    "leagueKey": "ligue-1",
+    "leagueIcon": "🇫🇷",
+    "sport": "futebol",
+    "isLive": true,
+    "liveTime": "57'",
+    "homeTeam": "Le Mans FC",
+    "awayTeam": "Toulouse",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "stats": {
+      "possession": {
+        "home": 51,
+        "away": 49
+      },
+      "shotsOnTarget": {
+        "home": 3,
+        "away": 2
+      },
+      "totalShots": {
+        "home": 8,
+        "away": 6
+      },
+      "corners": {
+        "home": 4,
+        "away": 3
+      },
+      "yellowCards": {
+        "home": 1,
+        "away": 2
+      },
+      "redCards": {
+        "home": 0,
+        "away": 0
+      },
+      "dangerousAttacks": {
+        "home": 35,
+        "away": 29
+      }
+    },
+    "analysis": {
+      "headline": "Le Mans FC vs Toulouse — Ligue 1 (AO VIVO)",
+      "probHome": 45,
+      "probDraw": 25,
+      "probAway": 30,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-ligue-1-66c168c0-home",
+          "label": "Le Mans FC",
+          "odd": 4.26
+        },
+        "draw": {
+          "id": "live-ligue-1-66c168c0-draw",
+          "label": "Empate",
+          "odd": 2.54
+        },
+        "away": {
+          "id": "live-ligue-1-66c168c0-away",
+          "label": "Toulouse",
+          "odd": 2.36
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-ligue-1-66c168c0-over",
+          "label": "Mais de 2.5 Gols",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-ligue-1-66c168c0-under",
+          "label": "Menos de 2.5 Gols",
+          "odd": 1.92
+        },
+        "label": "Total de Gols"
+      },
+      "btts": {
+        "yes": {
+          "id": "live-ligue-1-66c168c0-btts-yes",
+          "label": "Sim",
+          "odd": 1.75
+        },
+        "no": {
+          "id": "live-ligue-1-66c168c0-btts-no",
+          "label": "Não",
+          "odd": 2.05
+        }
+      }
+    }
+  },
+  {
+    "id": "live-euroleague-54c60d68",
+    "league": "EuroLeague",
+    "leagueKey": "euroleague",
+    "leagueIcon": "🏀",
+    "sport": "basquete",
+    "isLive": true,
+    "liveTime": "Ao Vivo",
+    "homeTeam": "KK Crvena zvezda",
+    "awayTeam": "Paris Basketball",
+    "homeScore": 81,
+    "awayScore": 70,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "analysis": {
+      "headline": "KK Crvena zvezda vs Paris Basketball — EuroLeague (AO VIVO)",
+      "probHome": 45,
+      "probAway": 55,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-euroleague-54c60d68-home",
+          "label": "KK Crvena zvezda",
+          "odd": 1.02
+        },
+        "away": {
+          "id": "live-euroleague-54c60d68-away",
+          "label": "Paris Basketball",
+          "odd": 12.25
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-euroleague-54c60d68-over",
+          "label": "Mais de 160.5 Pontos",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-euroleague-54c60d68-under",
+          "label": "Menos de 160.5 Pontos",
+          "odd": 1.92
+        },
+        "label": "Total de Pontos"
+      }
+    }
+  },
+  {
+    "id": "live-euroleague-6788902c",
+    "league": "EuroLeague",
+    "leagueKey": "euroleague",
+    "leagueIcon": "🏀",
+    "sport": "basquete",
+    "isLive": true,
+    "liveTime": "Ao Vivo",
+    "homeTeam": "Panathinaikos",
+    "awayTeam": "Hapoel Tel Aviv",
+    "homeScore": 59,
+    "awayScore": 64,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "analysis": {
+      "headline": "Panathinaikos vs Hapoel Tel Aviv — EuroLeague (AO VIVO)",
+      "probHome": 45,
+      "probAway": 55,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-euroleague-6788902c-home",
+          "label": "Panathinaikos",
+          "odd": 1.55
+        },
+        "away": {
+          "id": "live-euroleague-6788902c-away",
+          "label": "Hapoel Tel Aviv",
+          "odd": 2.45
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-euroleague-6788902c-over",
+          "label": "Mais de 160.5 Pontos",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-euroleague-6788902c-under",
+          "label": "Menos de 160.5 Pontos",
+          "odd": 1.92
+        },
+        "label": "Total de Pontos"
+      }
+    }
+  },
+  {
+    "id": "live-euroleague-73a55f1f",
+    "league": "EuroLeague",
+    "leagueKey": "euroleague",
+    "leagueIcon": "🏀",
+    "sport": "basquete",
+    "isLive": true,
+    "liveTime": "Ao Vivo",
+    "homeTeam": "FC Barcelona Bàsquet",
+    "awayTeam": "Olympiacos",
+    "homeScore": 60,
+    "awayScore": 67,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "analysis": {
+      "headline": "FC Barcelona Bàsquet vs Olympiacos — EuroLeague (AO VIVO)",
+      "probHome": 45,
+      "probAway": 55,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-euroleague-73a55f1f-home",
+          "label": "FC Barcelona Bàsquet",
+          "odd": 3.8
+        },
+        "away": {
+          "id": "live-euroleague-73a55f1f-away",
+          "label": "Olympiacos",
+          "odd": 1.25
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-euroleague-73a55f1f-over",
+          "label": "Mais de 160.5 Pontos",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-euroleague-73a55f1f-under",
+          "label": "Menos de 160.5 Pontos",
+          "odd": 1.92
+        },
+        "label": "Total de Pontos"
+      }
+    }
+  },
+  {
+    "id": "live-euroleague-4f1f13e8",
+    "league": "EuroLeague",
+    "leagueKey": "euroleague",
+    "leagueIcon": "🏀",
+    "sport": "basquete",
+    "isLive": true,
+    "liveTime": "Ao Vivo",
+    "homeTeam": "Virtus Segafredo Bologna",
+    "awayTeam": "Saski Baskonia",
+    "homeScore": 55,
+    "awayScore": 40,
+    "date": "AO VIVO AGORA",
+    "featured": false,
+    "analysis": {
+      "headline": "Virtus Segafredo Bologna vs Saski Baskonia — EuroLeague (AO VIVO)",
+      "probHome": 45,
+      "probAway": 55,
+      "formHome": [
+        "V",
+        "E",
+        "V"
+      ],
+      "formAway": [
+        "E",
+        "D",
+        "V"
+      ],
+      "summary": "Partida oficial em andamento. Placares em tempo real e odds oficiais transmitidas via The Odds API.",
+      "tip": "Aposta em tempo real",
+      "keyStat": "The Odds API Oficial"
+    },
+    "markets": {
+      "winner": {
+        "home": {
+          "id": "live-euroleague-4f1f13e8-home",
+          "label": "Virtus Segafredo Bologna",
+          "odd": 1.05
+        },
+        "away": {
+          "id": "live-euroleague-4f1f13e8-away",
+          "label": "Saski Baskonia",
+          "odd": 9.5
+        }
+      },
+      "goals": {
+        "over25": {
+          "id": "live-euroleague-4f1f13e8-over",
+          "label": "Mais de 160.5 Pontos",
+          "odd": 1.88
+        },
+        "under25": {
+          "id": "live-euroleague-4f1f13e8-under",
+          "label": "Menos de 160.5 Pontos",
+          "odd": 1.92
+        },
+        "label": "Total de Pontos"
+      }
+    }
+  }
+]

@@ -1,0 +1,427 @@
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 320px;
+  min-height: calc(100vh - 68px);
+}
+
+.mainContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #12092b 0%, #0c142c 50%, #060911 100%);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--purple-glow);
+}
+
+.heroOverlay {
+  padding: 2rem 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+}
+
+.heroBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heroLeague {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroMatchup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.heroTeam {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.heroTeamName {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.heroTeamBadge {
+  font-size: 1.8rem;
+}
+
+.heroScoreBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--gold);
+  padding: 0.4rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px var(--gold-glow);
+}
+
+.heroScoreNum {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--gold);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.heroScoreDivider {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text-muted);
+}
+
+.heroTimeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--purple-primary);
+  padding: 0.5rem 1.4rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.heroTimeText {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--gold);
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.heroTimeVs {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+}
+
+.heroDateTag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(124, 58, 237, 0.25);
+  border: 1px solid var(--purple-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.heroTagline {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--purple-light);
+  letter-spacing: 0.12em;
+}
+
+/* Card Vazio Ao Vivo Elegante */
+.emptyLiveCard {
+  background: linear-gradient(135deg, rgba(20, 24, 38, 0.95), rgba(13, 17, 28, 0.95));
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.emptyLiveLeft {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.emptyLiveIcon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.emptyLiveTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.emptyLiveDesc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .emptyLiveCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.heroOdds {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.heroOdds > * {
+  flex: 1;
+  padding: 0.75rem 0.5rem;
+}
+
+/* Bonus Banner */
+.bonusBanner {
+  background: linear-gradient(135deg, #241442, #111b33);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bonusContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.bonusBadge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.bonusTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.bonusSub {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* Quick Nav */
+.quickNav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.6rem;
+}
+
+.quickCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.quickCard:hover {
+  border-color: var(--purple-primary);
+  background: rgba(124, 58, 237, 0.1);
+  transform: translateY(-2px);
+}
+
+.quickIcon {
+  font-size: 1.4rem;
+}
+
+.quickText {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+/* Section Blocks */
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewAll {
+  color: var(--purple-light);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.viewAll:hover {
+  text-decoration: underline;
+}
+
+.matchesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* Casino Grid */
+.casinoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.casinoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+}
+
+.casinoCard {
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.casinoCard:hover {
+  border-color: var(--purple-primary);
+  box-shadow: 0 8px 25px var(--purple-glow);
+  transform: translateY(-4px);
+}
+
+.casinoCardInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.casinoBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(124, 58, 237, 0.3);
+  border: 1px solid var(--purple-primary);
+  color: var(--purple-light);
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.casinoBadgeGold {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.casinoIcon {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.casinoTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.casinoDesc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+}
+
+.playNow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 0.25rem;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .casinoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quickNav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .bonusBanner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bonusBanner a {
+    width: 100%;
+    text-align: center;
+  }
+  .heroMatchup {
+    gap: 0.75rem;
+  }
+  .heroTeamName {
+    font-size: 1.2rem;
+  }
+}

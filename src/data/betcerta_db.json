@@ -1,0 +1,580 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Dono da BetCerta",
+      "email": "admin@betcerta.com",
+      "cpf": "000.000.000-00",
+      "passwordHash": "9f8b47680edbbac70cd4ee876b2cbdd7a26f809f496e277bd1fb55cf31673dda45bbba915502a880ccd3f33b5217669459e68174897d47b188268e6b2ab4bb72",
+      "salt": "870522ce9abebf83e2a6fb6837525400",
+      "saldo": 0,
+      "bonus": 50,
+      "status": "active",
+      "role": "user",
+      "createdAt": "2026-10-16T16:02:09.939Z",
+      "lastLogin": "2026-10-16T19:00:34.631Z"
+    },
+    {
+      "id": "usr_demo",
+      "name": "Carlos Apostador",
+      "email": "carlos@teste.com",
+      "cpf": "123.456.789-00",
+      "passwordHash": "e32a5da5bf955ec1f595761e429791be6326cca61ad36bb069243cc880de96ef42147dfa25c7f79f1f5e9e94ca6a7662778dea71d5b7bab21987c05b301b9ee6",
+      "salt": "870522ce9abebf83e2a6fb6837525400",
+      "saldo": 325,
+      "bonus": 50,
+      "status": "active",
+      "role": "user",
+      "createdAt": "2026-10-16T16:02:09.948Z",
+      "lastLogin": "2026-10-16T16:08:51.290Z"
+    },
+    {
+      "id": "usr_1792166570769_o5n84",
+      "name": "Felipe Santos",
+      "email": "felipe@teste.com",
+      "cpf": "987.654.321-11",
+      "passwordHash": "9cff155ec2e9d01b6ed7b9cb35d17cdab0c2deb95c33d4d9c2d6c9773e1d66e2631ab316d5ccd4459fd554aae4de5355f16ec64d656db887609ec701d1ba1396",
+      "salt": "9e3fcf1d200a5f4a5558bce95494a27f",
+      "saldo": 230.75,
+      "bonus": 20,
+      "status": "active",
+      "role": "user",
+      "createdAt": "2026-10-16T16:02:50.769Z",
+      "lastLogin": "2026-10-16T16:02:50.973Z"
+    },
+    {
+      "id": "usr_1792166682272_h9u33",
+      "name": "erick gabriel",
+      "email": "eeerickgabriel9@gmail.com",
+      "cpf": "70993608418",
+      "passwordHash": "5d90c7204730f3a96f61aaf4f807ae46a34f7a5108823d6d06962272b554035506adfbcf0695e92f36d8589a2fece35787c8c587ab442cba98c57b31fad9e750",
+      "salt": "5933e50f64591b96bca6a54b3a18897f",
+      "saldo": 1507.25,
+      "bonus": 20,
+      "status": "active",
+      "role": "admin",
+      "createdAt": "2026-10-16T16:04:42.272Z",
+      "lastLogin": "2026-10-17T03:08:05.083Z",
+      "vipClaimedRewards": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "usr_1792167764551_73vn0",
+      "name": "Gabriel Lima",
+      "email": "gabriel.lima@teste.com",
+      "cpf": "555.444.333-22",
+      "passwordHash": "6c8a293ad0ad222aaa20f40e173b2636819cf873df3083584d3da860b15839a2f46272c9d06364cfa040c3815e8ce90ff63efada3a9daa68c415388d6c94cfdf",
+      "salt": "e085f0ddff7fddf526b7e2b0ab9e0f64",
+      "saldo": 0,
+      "bonus": 20,
+      "status": "active",
+      "role": "user",
+      "emailVerified": true,
+      "createdAt": "2026-10-16T16:22:44.551Z",
+      "lastLogin": "2026-10-16T16:22:44.551Z"
+    },
+    {
+      "id": "usr_1792181029846_mbv75",
+      "name": "Paulo Joel do Nascimento Pedrosa",
+      "email": "valerioelandio5@gmail.com",
+      "cpf": "13940556416",
+      "passwordHash": "186305a83d7fe39a79170b8f41e38bc39e87cf4f8b5cc1cb717dd87efc4aaa1442dacc9d1a682b90ba8ad50c700cee10561d042a5047b9f9ef835c2d2dc2ff9b",
+      "salt": "4ef3713ebc69811c12926ea3056c300c",
+      "saldo": 1123,
+      "bonus": 0,
+      "status": "active",
+      "role": "user",
+      "emailVerified": true,
+      "createdAt": "2026-10-16T20:03:49.846Z",
+      "lastLogin": "2026-10-16T20:03:49.846Z"
+    },
+    {
+      "id": "usr_1792234893899_4j7y0",
+      "name": "Apostador Teste VIP",
+      "email": "teste_novo_1792234893848@teste.com",
+      "cpf": "11122233394",
+      "passwordHash": "60f0cf9d404241683b6f49073cb35c0ef550596e908ad610e1f725720064b1a9b8437d78f4575dda3f12ea4b3456d1d8135641d8c96a07d00ddd390eef174f8b",
+      "salt": "b364f5d956d01667a39cc0c72fcbdefc",
+      "saldo": 29,
+      "bonus": 0,
+      "status": "active",
+      "role": "user",
+      "emailVerified": true,
+      "verificationCode": "269142",
+      "codeExpiresAt": "2026-10-17T11:16:33.899Z",
+      "createdAt": "2026-10-17T11:01:33.899Z",
+      "lastLogin": "2026-10-17T11:01:33.899Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "428008571ad3cab1330a19b7662a4e5a518c63c8cfcf8f3c9f63522cb6c083d7",
+      "userId": "usr_1792166570769_o5n84",
+      "createdAt": "2026-10-16T16:02:50.769Z",
+      "expiresAt": "2026-11-15T16:02:50.769Z"
+    },
+    {
+      "token": "3dce1348d181de18679ad9a14fc849fc26150e675082650bb6a44297e9d04319",
+      "userId": "usr_1792166570769_o5n84",
+      "createdAt": "2026-10-16T16:02:50.973Z",
+      "expiresAt": "2026-11-15T16:02:50.973Z"
+    },
+    {
+      "token": "e0c513c77a95f8cccada80ba777ef240a4b290431422d5abf773104f078528ad",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T16:04:42.272Z",
+      "expiresAt": "2026-11-15T16:04:42.272Z"
+    },
+    {
+      "token": "72459c625a4d05b1f33606d5efc5c5291fae195498692fad3bccc8ebc19b6e34",
+      "userId": "usr_demo",
+      "createdAt": "2026-10-16T16:08:51.290Z",
+      "expiresAt": "2026-11-15T16:08:51.290Z"
+    },
+    {
+      "token": "eddb57070554e434404e471600c42f3cf88b617983e6c84c2e71f026e28a5308",
+      "userId": "usr_admin",
+      "createdAt": "2026-10-16T16:15:32.821Z",
+      "expiresAt": "2026-11-15T16:15:32.821Z"
+    },
+    {
+      "token": "cb0a938be9b7521eeb7ae82c43e9d9e03d77ea1d7c9020d45c320c71f7927bb2",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T16:15:59.409Z",
+      "expiresAt": "2026-11-15T16:15:59.409Z"
+    },
+    {
+      "token": "484c3431ecc30e3f345236e30f8c68c8d7f2ad8df22eb53d2d8da668bb60f26b",
+      "userId": "usr_1792167764551_73vn0",
+      "createdAt": "2026-10-16T16:22:44.786Z",
+      "expiresAt": "2026-11-15T16:22:44.786Z"
+    },
+    {
+      "token": "2b688109c6092720b4a2b63fbf47d396e4e10fc813089e48f27fa13f49dd8fb5",
+      "userId": "usr_admin",
+      "createdAt": "2026-10-16T16:36:00.290Z",
+      "expiresAt": "2026-11-15T16:36:00.290Z"
+    },
+    {
+      "token": "3d9d216f164bdc3b3d75b3c1daad71d429233d839990314cd82ac78d71889188",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T18:11:05.595Z",
+      "expiresAt": "2026-11-15T18:11:05.595Z"
+    },
+    {
+      "token": "bb857663f94e07550cdc76aa81a0628fdeff064377c440d5273bdbfe94ee151d",
+      "userId": "usr_admin",
+      "createdAt": "2026-10-16T18:52:42.250Z",
+      "expiresAt": "2026-11-15T18:52:42.250Z"
+    },
+    {
+      "token": "e8e7d05f98679e87065b0f2b64438fe01786650ee1b120b10271218dc8745422",
+      "userId": "usr_admin",
+      "createdAt": "2026-10-16T18:52:42.387Z",
+      "expiresAt": "2026-11-15T18:52:42.387Z"
+    },
+    {
+      "token": "d5278a141b2d98e2cdab9223d13e41de6e07c42abe235f305d011b61e9aa2d4f",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T18:57:27.376Z",
+      "expiresAt": "2026-11-15T18:57:27.376Z"
+    },
+    {
+      "token": "23eb3e3f3ad3e737b648a42c3647a07740ac2ff6bdab5a98356f280d57e49e95",
+      "userId": "usr_admin",
+      "createdAt": "2026-10-16T19:00:34.632Z",
+      "expiresAt": "2026-11-15T19:00:34.632Z"
+    },
+    {
+      "token": "7fe0e8522a18802d5e748a6559be4e478c75c1d5651aa82b70d08009dfb5cb3a",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T19:33:21.623Z",
+      "expiresAt": "2026-11-15T19:33:21.623Z"
+    },
+    {
+      "token": "4dabb5c83474a26ebd7498545e8355bc9f42d63cc65990162f478ec9e9dd812c",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T19:37:36.324Z",
+      "expiresAt": "2026-11-15T19:37:36.324Z"
+    },
+    {
+      "token": "c5b29f8d3041919cb2c26b56cad01fd13de5e691f51c76c2c6395bd15749b1f6",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T19:44:53.006Z",
+      "expiresAt": "2026-11-15T19:44:53.006Z"
+    },
+    {
+      "token": "a8978c0f77f9103fad33f5223ddd12a1237d8659d186e807ecaae8ffc4bcd4b6",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T20:02:15.557Z",
+      "expiresAt": "2026-11-15T20:02:15.557Z"
+    },
+    {
+      "token": "4d0d121e5439f091523ee6548d3f9b25f934aa1ad61d835961aefd6ef4496005",
+      "userId": "usr_1792181029846_mbv75",
+      "createdAt": "2026-10-16T20:04:01.761Z",
+      "expiresAt": "2026-11-15T20:04:01.761Z"
+    },
+    {
+      "token": "cb2853de6f551f42ecdc5b11717c60fb22fbe1906b09625910fa9c60e5d6c7a0",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T20:12:42.369Z",
+      "expiresAt": "2026-11-15T20:12:42.369Z"
+    },
+    {
+      "token": "d1f405bcd5b810caa30f053502d6a9aa34d85d1597c0072498f98efa8cf1cabd",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T20:23:13.293Z",
+      "expiresAt": "2026-11-15T20:23:13.293Z"
+    },
+    {
+      "token": "d883b609b8cbffbd276b613f6228225348e1f8690fad92ef4d479114243d8f15",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T20:44:07.612Z",
+      "expiresAt": "2026-11-15T20:44:07.612Z"
+    },
+    {
+      "token": "2817bfb4dfab3709fa25960d449d0619d7b90fb1f2ace5266eb99e8222182284",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T21:57:50.489Z",
+      "expiresAt": "2026-11-15T21:57:50.489Z"
+    },
+    {
+      "token": "c75eaf1acddb4185cfbf41da40fa326fc82dc5db535f342099fd20b090d3a03e",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T22:19:39.811Z",
+      "expiresAt": "2026-11-15T22:19:39.811Z"
+    },
+    {
+      "token": "1e2181aaaed825d4ceef339e7c8cf30bc81a3801a26a498d2b402e5d308a3e55",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-16T22:22:37.245Z",
+      "expiresAt": "2026-11-15T22:22:37.245Z"
+    },
+    {
+      "token": "934306107b0852486c337961f4458ea6ff44b5306d6123a420639d1cedb6494b",
+      "userId": "usr_1792166682272_h9u33",
+      "createdAt": "2026-10-17T03:08:05.085Z",
+      "expiresAt": "2026-11-16T03:08:05.085Z"
+    },
+    {
+      "token": "9cef214075c3d6fc66cefb428f172eda4d9e186ea6c97d0cf933c08933925fd0",
+      "userId": "usr_1792234893899_4j7y0",
+      "createdAt": "2026-10-17T11:01:33.899Z",
+      "expiresAt": "2026-11-16T11:01:33.899Z"
+    }
+  ],
+  "bets": [
+    {
+      "id": "BET-52371",
+      "userId": "usr_1792234893899_4j7y0",
+      "userEmail": "teste_novo_1792234893848@teste.com",
+      "userName": "Apostador Teste VIP",
+      "date": "2026-10-17T11:01:48.416Z",
+      "selections": [
+        {
+          "id": "brasileirao-bota-chap-h",
+          "matchId": "brasileirao-bota-chap",
+          "matchTitle": "Botafogo vs Chapecoense",
+          "sport": "futebol",
+          "marketName": "Resultado Final (1X2)",
+          "selection": "Botafogo",
+          "odd": 1.45,
+          "status": "won"
+        }
+      ],
+      "stake": 20,
+      "totalOdds": 1.45,
+      "potentialReturn": 29,
+      "status": "won",
+      "resultDetails": "🎉 GREEN! Botafogo 2 x 1 Chapecoense. Prêmio pago: R$ 29.00",
+      "settledAt": "2026-10-17T11:02:00.041Z"
+    },
+    {
+      "id": "BET-50172",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "date": "2026-10-16T20:16:38.587Z",
+      "selections": [
+        {
+          "id": "live-ligue-1-66c168c0-away",
+          "matchId": "live-ligue-1-66c168c0",
+          "matchTitle": "Le Mans FC vs Toulouse",
+          "sport": "futebol",
+          "marketName": "Resultado Final (1X2)",
+          "selection": "Toulouse",
+          "odd": 2.36
+        }
+      ],
+      "stake": 200,
+      "totalOdds": 2.36,
+      "potentialReturn": 472,
+      "status": "won",
+      "settledAt": "2026-10-16T21:14:27.720Z",
+      "resultDetails": "🎉 GREEN! Le Mans FC 0 x 3 Toulouse. Prêmio pago: R$ 472.00"
+    },
+    {
+      "id": "BET-48276",
+      "userId": "usr_1792181029846_mbv75",
+      "userEmail": "valerioelandio5@gmail.com",
+      "userName": "Paulo Joel do Nascimento Pedrosa",
+      "date": "2026-10-16T20:09:01.947Z",
+      "selections": [
+        {
+          "id": "serie-b-spor-fort-crd-o35",
+          "matchId": "serie-b-spor-fort",
+          "matchTitle": "Sport Recife vs Fortaleza",
+          "sport": "futebol",
+          "marketName": "Cartões",
+          "selection": "Mais de 3.5 Cartões",
+          "odd": 1.68,
+          "status": "won"
+        },
+        {
+          "id": "serie-b-spor-fort-tot-u35",
+          "matchId": "serie-b-spor-fort",
+          "matchTitle": "Sport Recife vs Fortaleza",
+          "sport": "futebol",
+          "marketName": "Total de Gols",
+          "selection": "Menos de 3.5 Gols",
+          "odd": 1.33,
+          "status": "won"
+        }
+      ],
+      "stake": 100,
+      "totalOdds": 2.23,
+      "potentialReturn": 223,
+      "status": "won",
+      "settledAt": "2026-10-17T10:42:13.289Z",
+      "resultDetails": "🎉 GREEN! Sport Recife 1 x 1 Fortaleza. Prêmio pago: R$ 223.00"
+    },
+    {
+      "id": "BET-55997",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "date": "2026-10-16T19:50:47.279Z",
+      "selections": [
+        {
+          "id": "live-la-liga-19ee7316-btts-no",
+          "matchId": "live-la-liga-19ee7316",
+          "matchTitle": "Deportivo La Coruña vs Levante",
+          "sport": "futebol",
+          "marketName": "Ambos os Times Marcam",
+          "selection": "Ambos Marcam: Não",
+          "odd": 2.05
+        }
+      ],
+      "stake": 395,
+      "totalOdds": 2.05,
+      "potentialReturn": 809.75,
+      "status": "lost",
+      "settledAt": "2026-10-16T21:14:27.723Z",
+      "resultDetails": "Partida finalizada: Deportivo La Coruña 1 x 1 Levante (Empate)."
+    },
+    {
+      "id": "BET-38458",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "date": "2026-10-16T18:59:16.633Z",
+      "selections": [
+        {
+          "id": "la-liga-depo-leva-ply-1",
+          "matchId": "la-liga-depo-leva",
+          "matchTitle": "Deportivo La Coruña vs Levante",
+          "sport": "futebol",
+          "marketName": "Marcador de Gol",
+          "selection": "Artilheiro do Deportivo marca",
+          "odd": 2.6
+        }
+      ],
+      "stake": 501,
+      "totalOdds": 2.6,
+      "potentialReturn": 1302.6,
+      "status": "lost"
+    },
+    {
+      "id": "BET-44241",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "date": "2026-10-16T18:58:31.806Z",
+      "selections": [
+        {
+          "id": "la-liga-depo-leva-dc-1x",
+          "matchId": "la-liga-depo-leva",
+          "matchTitle": "Deportivo La Coruña vs Levante",
+          "sport": "futebol",
+          "marketName": "Dupla Chance",
+          "selection": "1X (Deportivo La Coruña ou Empate)",
+          "odd": 1.27
+        }
+      ],
+      "stake": 395,
+      "totalOdds": 1.27,
+      "potentialReturn": 501.65,
+      "status": "won"
+    },
+    {
+      "id": "BET-44108",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "date": "2026-10-16T18:51:46.541Z",
+      "selections": [
+        {
+          "id": "la-liga-depo-leva-tot-o15",
+          "matchId": "la-liga-depo-leva",
+          "matchTitle": "Deportivo La Coruña vs Levante",
+          "sport": "futebol",
+          "marketName": "Total de Gols",
+          "selection": "Mais de 1.5 Gols",
+          "odd": 1.3
+        }
+      ],
+      "stake": 150,
+      "totalOdds": 1.3,
+      "potentialReturn": 195,
+      "status": "won"
+    },
+    {
+      "id": "BET-72642",
+      "userId": "usr_demo",
+      "userEmail": "carlos@teste.com",
+      "userName": "Carlos Apostador",
+      "date": "2026-10-16T16:58:27.505Z",
+      "selections": [
+        {
+          "id": "brasileirao-bota-chap-h",
+          "matchId": "brasileirao-bota-chap",
+          "matchTitle": "Botafogo vs Chapecoense",
+          "sport": "futebol",
+          "marketName": "Resultado Final (1X2)",
+          "selection": "Botafogo",
+          "odd": 1.45
+        }
+      ],
+      "stake": 50,
+      "totalOdds": 1.45,
+      "potentialReturn": 72.5,
+      "status": "won",
+      "settledAt": "2026-10-16T16:58:27.529Z",
+      "resultDetails": "🎉 GREEN! Botafogo 2 x 1 Chapecoense. Prêmio pago: R$ 72.50"
+    },
+    {
+      "id": "BET-78192",
+      "userId": "usr_demo",
+      "userEmail": "carlos@teste.com",
+      "userName": "Carlos Apostador",
+      "date": "2026-10-16T16:15:49.526Z",
+      "selections": [
+        {
+          "id": "brasileirao-mira-inte-h",
+          "matchId": "brasileirao-mira-inte",
+          "matchTitle": "Mirassol vs Internacional",
+          "sport": "futebol",
+          "marketName": "Resultado Final (1X2)",
+          "selection": "Mirassol",
+          "odd": 2.05
+        }
+      ],
+      "stake": 50,
+      "totalOdds": 2.05,
+      "potentialReturn": 102.5,
+      "status": "won",
+      "settledAt": "2026-10-16T16:56:11.950Z",
+      "resultDetails": "🎉 GREEN! Mirassol 2 x 0 Internacional. Prêmio pago: R$ 102.50"
+    },
+    {
+      "id": "BET-78193",
+      "userId": "usr_1792166570769_o5n84",
+      "userEmail": "felipe@teste.com",
+      "userName": "Felipe Santos",
+      "date": "2026-10-16T16:30:49.527Z",
+      "selections": [
+        {
+          "id": "brasileirao-bota-chap-h",
+          "matchId": "brasileirao-bota-chap",
+          "matchTitle": "Botafogo vs Chapecoense",
+          "sport": "futebol",
+          "marketName": "Resultado Final (1X2)",
+          "selection": "Botafogo",
+          "odd": 1.45
+        }
+      ],
+      "stake": 35,
+      "totalOdds": 1.45,
+      "potentialReturn": 50.75,
+      "status": "won",
+      "settledAt": "2026-10-16T16:56:11.952Z",
+      "resultDetails": "🎉 GREEN! Botafogo 2 x 0 Chapecoense. Prêmio pago: R$ 50.75"
+    },
+    {
+      "id": "BET-78194",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "date": "2026-10-16T16:40:49.527Z",
+      "selections": [
+        {
+          "id": "brasileirao-mira-inte-o",
+          "matchId": "brasileirao-mira-inte",
+          "matchTitle": "Mirassol vs Internacional",
+          "sport": "futebol",
+          "marketName": "Total de Gols",
+          "selection": "Mais de 2.5 Gols",
+          "odd": 1.85,
+          "status": "won"
+        }
+      ],
+      "stake": 100,
+      "totalOdds": 1.85,
+      "potentialReturn": 185,
+      "status": "won",
+      "settledAt": "2026-10-17T10:42:13.291Z",
+      "resultDetails": "🎉 GREEN! Mirassol 2 x 1 Internacional. Prêmio pago: R$ 185.00"
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "SAQ-41429",
+      "userId": "usr_1792166682272_h9u33",
+      "userEmail": "eeerickgabriel9@gmail.com",
+      "userName": "erick gabriel",
+      "amount": 200,
+      "pixKeyType": "cpf",
+      "pixKey": "70993608418",
+      "status": "rejected",
+      "createdAt": "2026-10-16T18:11:15.388Z",
+      "rejectedReason": "Chave PIX incorreta"
+    },
+    {
+      "id": "SAQ-12499",
+      "userId": "usr_demo",
+      "userEmail": "carlos@teste.com",
+      "userName": "Carlos Apostador",
+      "amount": 25,
+      "pixKeyType": "cpf",
+      "pixKey": "000.000.000-00",
+      "status": "rejected",
+      "createdAt": "2026-10-16T18:08:36.398Z",
+      "rejectedReason": "Chave CPF incorreta"
+    },
+    {
+      "id": "SAQ-90886",
+      "userId": "usr_demo",
+      "userEmail": "carlos@teste.com",
+      "userName": "Carlos Apostador",
+      "amount": 50,
+      "pixKeyType": "cpf",
+      "pixKey": "123.456.789-00",
+      "status": "approved",
+      "createdAt": "2026-10-16T18:08:13.068Z",
+      "approvedAt": "2026-10-16T18:08:23.695Z"
+    }
+  ]
+}

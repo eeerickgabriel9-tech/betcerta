@@ -1,0 +1,740 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem 1.5rem;
+  color: #fff;
+  min-height: 85vh;
+}
+
+/* Header do Perfil */
+.profileHeader {
+  background: linear-gradient(135deg, rgba(16, 24, 39, 0.95), rgba(11, 14, 20, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.profileHeader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f59e0b, #10b981, #0073f5);
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.userIdentity {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #0b0e14;
+  font-size: 2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.userMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.userName {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.verifiedBadge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.userEmail {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.userCpf {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.balanceBox {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.balanceLabel {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.balanceValue {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #10b981;
+  text-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Card de Depósito PIX Pendente */
+.pendingDepositCard {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(11, 14, 20, 0.9));
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+  animation: pulsePending 3s infinite ease-in-out;
+}
+
+@keyframes pulsePending {
+  0%, 100% { border-color: rgba(245, 158, 11, 0.4); }
+  50% { border-color: rgba(245, 158, 11, 0.7); box-shadow: 0 0 35px rgba(245, 158, 11, 0.25); }
+}
+
+.pendingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pendingTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pendingBadge {
+  background: #f59e0b;
+  color: #0b0e14;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.pendingBody {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.pendingQrBox {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 12px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pendingQrImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pendingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pendingAmount {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.pendingSub {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.copyInputGroup {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 550px;
+}
+
+.copyInput {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  color: #e2e8f0;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.pendingActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Grid de Estatísticas Rápidas */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.statIcon {
+  font-size: 1.8rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.statData {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.statTitle {
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+/* Abas */
+.tabsBar {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.tabBtn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tabActive {
+  color: #f59e0b !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+  border-bottom: 2px solid #f59e0b;
+}
+
+/* Conteúdo da Aba */
+.tabContent {
+  background: rgba(16, 24, 39, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+/* Informações Pessoais */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.infoItem {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.infoItemLabel {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.infoItemValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Tabela de Apostas */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.betTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.betTable th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.betTable td {
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.badgeGreen {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+.badgeRed {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+.badgeOpen {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+/* Formulário de Saque */
+.withdrawForm {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.formInput {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}
+
+.withdrawDisclaimer {
+  background: rgba(0, 115, 245, 0.1);
+  border: 1px solid rgba(0, 115, 245, 0.25);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #93c5fd;
+  line-height: 1.5;
+}
+
+.vipNextTierRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Card do Clube VIP */
+.vipCard {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98));
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 18px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.vipHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.vipTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.vipLevelBadge {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #000;
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+.progressBarContainer {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  height: 14px;
+  overflow: hidden;
+  margin: 0.75rem 0 0.5rem;
+  position: relative;
+}
+
+.progressBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #f59e0b);
+  border-radius: 999px;
+  transition: width 0.4s ease-in-out;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.vipSubText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.vipTiersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.vipTierBox {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.vipTierActive {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.vipTierCompleted {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.tierTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tierName {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.tierTarget {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.tierReward {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+/* REGRAS RESPONSIVAS MOBILE EXTREMAMENTE POLIDAS */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0.75rem 5rem 0.75rem;
+    max-width: 100vw;
+  }
+
+  .profileHeader {
+    padding: 1.25rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.25rem;
+  }
+
+  .headerTop {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .userIdentity {
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .userName {
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .verifiedBadge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .userEmail,
+  .userCpf {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+
+  .balanceBox {
+    width: 100%;
+    align-items: stretch;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .balanceValue {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  .balanceLabel {
+    text-align: left;
+  }
+
+  .headerActions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .pendingBody {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .copyInputGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pendingActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vipCard {
+    padding: 1.25rem 1rem;
+    border-radius: 14px;
+    margin-bottom: 1.25rem;
+  }
+
+  .vipHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .vipNextTierRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    font-size: 0.82rem;
+  }
+
+  .vipSubText {
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+  }
+
+  .vipTiersGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .statCard {
+    padding: 0.85rem;
+    gap: 0.6rem;
+  }
+
+  .statIcon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.3rem;
+  }
+
+  .statValue {
+    font-size: 1.1rem;
+  }
+
+  .tabContent {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}

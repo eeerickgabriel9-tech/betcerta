@@ -1,0 +1,66 @@
+.toast {
+  position: fixed;
+  top: 76px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  max-width: 420px;
+  animation: slideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.greenToast {
+  background: rgba(16, 185, 129, 0.95);
+  border: 1px solid #10b981;
+  color: #fff;
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.5);
+}
+
+.goalToast {
+  background: rgba(124, 58, 237, 0.95);
+  border: 1px solid var(--purple-light);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.5);
+}
+
+.defaultToast {
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid var(--border);
+  color: #fff;
+}
+
+.toastIcon {
+  font-size: 1.5rem;
+}
+
+.toastText {
+  flex: 1;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+}

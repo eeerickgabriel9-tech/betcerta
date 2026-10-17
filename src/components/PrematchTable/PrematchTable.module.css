@@ -1,0 +1,383 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+/* Barra de Filtro de Tempo 1Win */
+.timeFilterRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.65rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.timeFilterRow::-webkit-scrollbar {
+  display: none;
+}
+
+.timeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.timeBtn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.timeBtnActive {
+  background: var(--blue-1win) !important;
+  color: #fff !important;
+  font-weight: 700;
+  box-shadow: 0 2px 10px var(--blue-1win-glow);
+}
+
+.timeBadgeCount {
+  font-size: 0.72rem;
+  opacity: 0.85;
+  margin-left: 0.25rem;
+  font-weight: 700;
+}
+
+/* Fita de Esportes 1Win */
+.sportsBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.sportTab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.sportTab:hover {
+  background: var(--bg-card-hover);
+  color: #fff;
+  border-color: var(--border-light);
+}
+
+.sportTabActive {
+  background: rgba(0, 115, 245, 0.12) !important;
+  border-color: var(--blue-1win) !important;
+  color: #fff !important;
+}
+
+.sportCountBadge {
+  background: #1e283d;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.sportTabActive .sportCountBadge {
+  background: var(--blue-1win);
+  color: #fff;
+}
+
+/* Bloco de Liga Prematch 1Win */
+.leagueBlock {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.leagueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #141b2b;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+}
+
+.leagueTitleLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.leagueFlag {
+  font-size: 1.15rem;
+}
+
+.leagueName {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.leagueBadgeCount {
+  font-size: 0.72rem;
+  background: #1f2b44;
+  color: var(--text-secondary);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.tableHeaderRow {
+  display: grid;
+  grid-template-columns: 80px 1fr 220px 130px 115px;
+  gap: 0.75rem;
+  padding: 0.4rem 1rem;
+  background: #0f1522;
+  border-bottom: 1px solid #1a2336;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  align-items: center;
+}
+
+.colCenter {
+  text-align: center;
+}
+
+/* Linha da Partida (1Win Row) */
+.matchRow {
+  display: grid;
+  grid-template-columns: 80px 1fr 220px 130px 115px;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #161e30;
+  align-items: center;
+  transition: all 0.15s ease;
+  background: var(--bg-card);
+}
+
+.matchRow:hover {
+  background: #161e30;
+}
+
+.matchRow:last-child {
+  border-bottom: none;
+}
+
+/* Horário */
+.timeCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.matchTime {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.matchDate {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+}
+
+/* Times */
+.teamsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.teamLine {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.teamName {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Coluna de Odds 1X2 / 1-2 */
+.oddsCol3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.oddsCol2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4rem;
+}
+
+.oddCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #182236;
+  border: 1px solid #23314d;
+  border-radius: 6px;
+  padding: 0.4rem 0.55rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.oddCell:hover {
+  background: #202c46;
+  border-color: #2e4168;
+}
+
+.oddSelected {
+  background: var(--blue-1win) !important;
+  border-color: #52a2ff !important;
+  box-shadow: 0 0 12px var(--blue-1win-glow) !important;
+}
+
+.oddLabel {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.oddVal {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.oddSelected .oddLabel,
+.oddSelected .oddVal {
+  color: #fff !important;
+}
+
+/* Botão Criar Aposta na Tabela */
+.builderCol {
+  display: flex;
+  justify-content: center;
+}
+
+.builderTableBtn {
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.12), rgba(255, 133, 51, 0.04));
+  border: 1px dashed rgba(255, 102, 0, 0.55);
+  color: #ff9944;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.42rem 0.65rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 100%;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.builderTableBtn:hover {
+  background: linear-gradient(135deg, #ff6600, #ff8533);
+  color: #ffffff;
+  border-style: solid;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.35);
+}
+
+/* Botão Mais Opções */
+.moreCol {
+  display: flex;
+  justify-content: center;
+}
+
+.moreBtn {
+  background: #182236;
+  border: 1px solid #23314d;
+  color: var(--text-secondary);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.42rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+}
+
+.moreBtn:hover {
+  background: rgba(0, 115, 245, 0.2);
+  border-color: var(--blue-1win);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Ações no Mobile */
+.tableActionsMobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .tableHeaderRow {
+    display: none;
+  }
+  .matchRow {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+  .oddsCol3, .oddsCol2 {
+    width: 100%;
+  }
+  .builderCol, .moreCol {
+    display: none;
+  }
+  .tableActionsMobile {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .tableActionsMobile .builderTableBtn,
+  .tableActionsMobile .moreBtn {
+    flex: 1;
+  }
+}

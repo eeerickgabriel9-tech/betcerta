@@ -1,0 +1,347 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8, 11, 20, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  height: 68px;
+}
+
+.navInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  letter-spacing: -0.02em;
+}
+
+.logoIcon {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 0 10px #f59e0b);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px #f59e0b); }
+  50% { transform: scale(1.08); filter: drop-shadow(0 0 16px #f59e0b); }
+}
+
+.logoText {
+  color: #ffffff;
+}
+
+.logoBet {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navLink:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+  color: #ffffff !important;
+  background: rgba(124, 58, 237, 0.2) !important;
+  border: 1px solid rgba(124, 58, 237, 0.4);
+}
+
+.navUser {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.saldoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.saldoBox:hover {
+  border-color: var(--purple-light);
+  transform: translateY(-1px);
+}
+
+.saldoLabel {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.saldoValue {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--green-win);
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.menuToggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navLinks {
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .mobileLink {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .mobileLink:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .mobileBtns {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .mobileBtns > * {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .navUser .btn-outline {
+    display: none;
+  }
+  .saldoLabel {
+    display: none;
+  }
+}
+
+.liveDot {
+  width: 7px;
+  height: 7px;
+  background: #ef4444;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ef4444;
+  display: inline-block;
+  animation: live-blink 1.2s infinite;
+}
+
+@keyframes live-blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.85); }
+}
+
+.bonusPill {
+  background: #ff9900;
+  color: #000;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  margin-left: 0.3rem;
+  line-height: 1;
+}
+
+.desktopOnly {
+  display: flex;
+}
+
+.depositBtn {
+  font-size: 0.85rem;
+  padding: 0.45rem 0.85rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .desktopOnly {
+    display: none !important;
+  }
+
+  .navInner {
+    padding: 0 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  .logoIcon {
+    font-size: 1.4rem;
+  }
+
+  .saldoBox {
+    padding: 0.25rem 0.6rem;
+  }
+
+  .saldoValue {
+    font-size: 0.85rem;
+  }
+
+  .depositBtn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .menuToggle {
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+  }
+}
+
+/* BARRA INFERIOR MOBILE FIXA ESTILO APP NATIVO */
+.mobileBottomNav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileBottomNav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background: #090d16;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    z-index: 999999;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.25rem;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.8);
+  }
+
+  .bottomNavItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 0.4rem 0.5rem;
+    border-radius: 8px;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .bottomActive {
+    color: #0088ff !important;
+  }
+
+  .bottomIcon {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .bottomLabel {
+    line-height: 1;
+  }
+
+  .bottomSlipBtn {
+    color: #f59e0b;
+  }
+
+  .bottomBadge {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    background: #0073f5;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 900;
+    border-radius: 999px;
+    padding: 1px 5px;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(0, 115, 245, 0.6);
+  }
+}

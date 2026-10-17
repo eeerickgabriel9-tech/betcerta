@@ -1,0 +1,449 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.balanceHeader {
+  background: linear-gradient(135deg, #180d38 0%, #0d162f 60%, #080c16 100%);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.balanceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.balanceLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.balanceValue {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--green-win);
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.balanceUser {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.quickActions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.actionActive {
+  background: var(--purple-primary) !important;
+  color: #fff !important;
+  border-color: var(--purple-primary) !important;
+  box-shadow: 0 4px 15px var(--purple-glow);
+}
+
+.cardSection {
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pixIcon {
+  font-size: 2.2rem;
+}
+
+.cardTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.cardSub {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.depositForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 580px;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.presetGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.presetBtn {
+  background: #141c2e;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.presetBtn:hover {
+  background: var(--purple-primary);
+  color: #fff;
+}
+
+.presetActive {
+  background: var(--purple-primary) !important;
+  color: #fff !important;
+  border-color: var(--purple-primary) !important;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  background: #080c16;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+.currencyPrefix {
+  font-weight: 800;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.numInput {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  width: 100%;
+  outline: none;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.bonusNotice {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: var(--gold-light);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.pixResult {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.qrCodeBox {
+  background: #080c16;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.realQrImage {
+  width: 180px;
+  height: 180px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+}
+
+.waitingBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(147, 51, 234, 0.15);
+  border: 1px solid rgba(147, 51, 234, 0.4);
+  color: #c084fc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  animation: pulseWaiting 2s infinite ease-in-out;
+}
+
+@keyframes pulseWaiting {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(0.98); }
+}
+
+.approvedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.qrAmount {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--green-win);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.qrTimer {
+  font-size: 0.72rem;
+  color: var(--gold);
+}
+
+.pixInstructions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pixInstructions h3 {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.pixInstructions ol {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.copyBox {
+  display: flex;
+  gap: 0.5rem;
+  background: #080c16;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+.copyInput {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  width: 100%;
+  outline: none;
+  padding-left: 0.5rem;
+}
+
+.testBtnBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.successAlert {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--green-win);
+  color: var(--green-win);
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.errorAlert {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--red-loss);
+  color: var(--red-loss);
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.keyTypes {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.keyBtn {
+  flex: 1;
+  background: #141c2e;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.4rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.keyActive {
+  background: var(--purple-primary);
+  color: #fff;
+  border-color: var(--purple-primary);
+}
+
+.textInput {
+  background: #080c16;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.chipsRow {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.quickChip {
+  flex: 1;
+  background: #141c2e;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.4rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quickChip:hover {
+  background: var(--purple-primary);
+  color: #fff;
+}
+
+.quickChipMax {
+  color: var(--gold);
+}
+
+.txList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.txItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #0c1220;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.85rem 1.15rem;
+}
+
+.txIcon {
+  font-size: 1.6rem;
+}
+
+.txDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.txDetails strong {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.txDetails span {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.txAmount {
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.txPositive {
+  color: var(--green-win);
+}
+
+.txNegative {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .pixResult {
+    grid-template-columns: 1fr;
+  }
+}

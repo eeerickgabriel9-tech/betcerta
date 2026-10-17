@@ -1,0 +1,651 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.backBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: var(--blue-1win);
+  transform: translateX(-2px);
+}
+
+/* Match Banner Principal */
+.matchBanner {
+  background: linear-gradient(135deg, #101726 0%, #0d121f 50%, #090d16 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.matchBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0073f5, #ff6600, transparent);
+}
+
+.bannerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 0.75rem;
+}
+
+.leagueBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.timeBadge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ff9900;
+  background: rgba(255, 153, 0, 0.12);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 153, 0, 0.3);
+}
+
+.teamsLayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.teamBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.teamName {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.vsCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 1rem;
+}
+
+.vsCircle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #182236;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--text-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Barra de Abas de Mercados */
+.tabsBar {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.4rem 0.2rem;
+  scrollbar-width: thin;
+}
+
+.tabsBar::-webkit-scrollbar {
+  height: 5px;
+}
+.tabsBar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.tabBtn {
+  background: #121929;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.tabBtn:hover {
+  background: #1c263d;
+  color: #ffffff;
+}
+
+.tabBtnActive {
+  background: var(--blue-1win) !important;
+  color: #ffffff !important;
+  border-color: #52a2ff !important;
+  box-shadow: 0 0 15px var(--blue-1win-glow);
+}
+
+/* Aba Especial Criar Aposta */
+.tabCriarAposta {
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.15), rgba(255, 133, 51, 0.05)) !important;
+  border: 1px solid #ff6600 !important;
+  color: #ff9944 !important;
+}
+
+.tabCriarAposta:hover {
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.25), rgba(255, 133, 51, 0.15)) !important;
+  color: #ffffff !important;
+}
+
+.tabCriarApostaActive {
+  background: linear-gradient(135deg, #ff6600, #ff8533) !important;
+  color: #ffffff !important;
+  border-color: #ff8533 !important;
+  box-shadow: 0 0 18px rgba(255, 102, 0, 0.5) !important;
+}
+
+/* Banner de Modo Criar Aposta Ativo */
+.builderActiveBanner {
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.15), rgba(15, 22, 38, 0.9));
+  border: 1px solid #ff6600;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.15);
+}
+
+.builderBannerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.builderIcon {
+  font-size: 1.5rem;
+}
+
+.builderTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.builderSub {
+  font-size: 0.78rem;
+  color: #ffb380;
+}
+
+/* Grid de Mercados */
+.marketsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.marketCard {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.marketHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.6rem;
+}
+
+.marketTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.oddsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+
+.oddBtn {
+  background: #182236;
+  border: 1px solid #23314d;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.oddBtn:hover {
+  background: #202c46;
+  border-color: #2e4168;
+  transform: translateY(-1px);
+}
+
+.oddSelected {
+  background: var(--blue-1win) !important;
+  border-color: #52a2ff !important;
+  box-shadow: 0 0 12px var(--blue-1win-glow) !important;
+}
+
+.oddSelectedBuilder {
+  background: rgba(255, 102, 0, 0.2) !important;
+  border: 1px solid #ff6600 !important;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.35) !important;
+}
+
+.oddLabel {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.checkMark {
+  color: #ff6600;
+  font-weight: 900;
+}
+
+.oddValue {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--gold);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.oddSelected .oddValue,
+.oddSelected .oddLabel {
+  color: #fff !important;
+}
+
+/* Floating Bar do Criar Aposta */
+.floatingBuilderBar {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 750px);
+  background: #0f1626;
+  border: 2px solid #ff6600;
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 102, 0, 0.35);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translate(-50%, 30px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+.chipsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-height: 70px;
+  overflow-y: auto;
+}
+
+.chipItem {
+  background: rgba(255, 102, 0, 0.18);
+  border: 1px solid rgba(255, 102, 0, 0.4);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.chipClose {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+.chipClose:hover {
+  color: #ef4444;
+}
+
+.barActionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.barOddsBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.barOddsLabel {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.barOddsValue {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ff6600;
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.1;
+  text-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
+}
+
+.btnSubmitBuilder {
+  background: linear-gradient(135deg, #ff6600, #ff8533);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btnSubmitBuilder:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 102, 0, 0.6);
+  filter: brightness(1.1);
+}
+
+.btnSubmitBuilder:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Seção de Análise Pré-Jogo */
+.analysisCard {
+  background: linear-gradient(135deg, #131b2e 0%, #0e1524 100%);
+  border: 1px solid rgba(0, 115, 245, 0.25);
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  margin-bottom: 0.5rem;
+}
+
+.analysisHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.75rem;
+}
+
+.analysisTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.analysisHeadline {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #93c5fd;
+  line-height: 1.4;
+}
+
+.probSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.probLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.probBarContainer {
+  height: 10px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+}
+
+.probBarHome {
+  background: #0073f5;
+  transition: width 0.3s ease;
+}
+
+.probBarDraw {
+  background: #f59e0b;
+  transition: width 0.3s ease;
+}
+
+.probBarAway {
+  background: #ec4899;
+  transition: width 0.3s ease;
+}
+
+.formsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.formCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.formBadges {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.badgeV {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #10b981;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeE {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f59e0b;
+  color: #000;
+  font-size: 0.68rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeD {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analysisSummary {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.insightsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.keyStatBox {
+  background: rgba(0, 115, 245, 0.1);
+  border: 1px solid rgba(0, 115, 245, 0.3);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.boxLabel {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #60a5fa;
+  letter-spacing: 0.05em;
+}
+
+.boxValue {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.tipBox {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.05));
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tipLabel {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fbbf24;
+  letter-spacing: 0.05em;
+}
+
+.tipValue {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #fef08a;
+}
+
+@media (max-width: 650px) {
+  .teamName {
+    font-size: 1rem;
+  }
+  .oddsGrid {
+    grid-template-columns: 1fr;
+  }
+  .floatingBuilderBar {
+    width: 95%;
+    padding: 0.85rem 1rem;
+  }
+  .formsRow, .insightsRow {
+    grid-template-columns: 1fr;
+  }
+}
